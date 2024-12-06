@@ -1,0 +1,106 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f8ff;
+    line-height: 1.6;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#water-progress {
+    width: 100%;
+    height: 30px;
+    background-color: #e0f2fe;
+    border-radius: 15px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+#water-fill {
+    width: 0%;
+    height: 100%;
+    background-color: #3b82f6;
+    transition: width 0.5s ease;
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input {
+    background-color: #f9f9f9;
+}
+
+button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#daily-log {
+    text-align: left;
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#daily-log h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#water-log {
+    list-style-type: none;
+}
+
+#water-log li {
+    background-color: #fff;
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
